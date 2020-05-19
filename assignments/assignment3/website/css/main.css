@@ -4,6 +4,8 @@
 
   /* -------------- CSS BODY ---------------  */
 
+  /* ------------------------------------------------ INDEX.HTML -------------------------------------------- */
+
   * {
     box-sizing: border-box;
   }
@@ -22,26 +24,26 @@ body {
     transition: color .4s;
     text-decoration: none;
   }
-  
+
   a:hover {
     color: var(--color-orange);
   }
-  
+
   ul {
     padding: 0;
   }
-  
+
   /**
    * Header
    */
-  
+
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--color-orange);
   }
 
-  
+
 
 /* ---------- HEADER ------------ */
 header{
@@ -60,15 +62,15 @@ header i{
     color: var(--color-middlegreen);
 }
 
-  
+
   /**
    * Navigation
    */
-  
+
   nav {
     background-color: var(--color-creme);
   }
-  
+
   nav .logo {
     background-image: url(../images/logo.svg);
     width: 167px;
@@ -76,22 +78,22 @@ header i{
     background-size: 167px 42px;
     background-repeat: no-repeat;
   }
-  
+
   nav ul {
     width: 100%;
     list-style-type: none;
   }
-  
+
   nav ul li {
     margin: 0 0 20px 0;
     padding: 0;
     text-align: center;
   }
-  
+
   .nav-links {
     display: none;
   }
-  
+
   .nav-links.toggled {
     display: flex;
     justify-content: center;
@@ -104,7 +106,7 @@ header i{
     height: 100%;
     background-color: var(--color-creme);
   }
-  
+
   @media (min-width: 768px) {
     .nav-links {
       display: block;
@@ -124,22 +126,22 @@ header i{
       padding-right: 0px;
     }
   }
-  
+
   /**
    * Navigation Toggle
    */
-  
+
   .nav-toggler {
     display: inline-block;
     cursor: pointer;
   }
-  
+
   @media (min-width: 768px) {
     .nav-toggler {
       display: none;
     }
   }
-  
+
   .nav-toggler .bar1,
   .nav-toggler .bar2,
   .nav-toggler .bar3 {
@@ -149,17 +151,17 @@ header i{
     margin: 6px 0;
     transition: 0.4s;
   }
-  
+
   /* Rotate first bar */
   .toggled .bar1 {
     transform: rotate(-45deg) translate(-9px, 6px) ;
   }
-  
+
   /* Fade out the second bar */
   .toggled .bar2 {
     opacity: 0;
   }
-  
+
   /* Rotate last bar */
   .toggled .bar3 {
     transform: rotate(45deg) translate(-8px, -8px) ;
@@ -168,9 +170,15 @@ header i{
 
 /* -------- MAIN ------------ */
 
-.main{
+main{
     font-family: 'Montserrat', sans-serif;
     font-size: 18pt;
+}
+
+h2{
+    text-transform: uppercase;
+    color: var(--color-lightgreen);
+    font-size: 20pt;
 }
 
 .info p{
@@ -178,7 +186,6 @@ header i{
 }
 
 .step-1{
-    width: 340px;
     margin: 10px 10px 10px 10px;
     padding: 10px;
     border: 5px solid var(--color-teal);
@@ -217,13 +224,45 @@ header i{
     font-size: 66px;
 }
 
+/* ------ CARDS -------  */
+main .all-products {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  color: var(--color-white);
+  background-color: var(--color-darkteal);
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+}
+
+main .all-products:hover{
+  background-color: var(--color-teal);
+}
+
+.card{
+  background-color: var(--color-middleteal);
+}
+
+.card img{
+  width: 100%;
+}
+
+.card h2{
+  color: var(--color-white);
+  font-size: 17pt;
+}
+
+.card-info{
+  background-color: var(--color-lightgreen);
+  border-radius: 0px 50px 0px 0px;
+  padding: 0px;
+  margin: 0;
+}
 
 
-
-
-
-
-/* 
+/*
 .select ul {
     list-style: none;
 }
@@ -234,62 +273,27 @@ header i{
     border: 1px solid var(--color-lightgreen);
     border-radius: 30px;
     height: 52px;
-    line-height: 50px;    
+    line-height: 50px;
     text-align: center;
     float: left;
     color: var(--color-white);
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    
+
 }
 
 .select ul li:hover{
     background-color: var(--color-darkgreen);
 }
- */ 
-
-/* 
-main button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20pt;
-    color: var(--color-white);
-    background-color: var(--color-darkteal);
-    text-decoration: none;
-    border: none;
-    border-radius: 50px;
-    padding: 5px 30px 5px 30px;
-}
-
-.card{
-    background-color: var(--color-middleteal);
-}
-
-.card img{
-    width: 100%;
-}
-
-.card h2{
-    color: var(--color-white);
-}
-
-.card-info{
-    background-color: var(--color-lightgreen);
-    border-radius: 0px 50px 0px 0px;
-}
  */
 
 
 
-
-
-
-
-
-
-
 /* -------------------- FOOTER --------------- */
-/* footer{
+
+footer{
+    margin: 20px 0px 0px 0px;
     font-family:'Montserrat', sans-serif;
     background-color: var(--color-creme);
     padding: 30px;
@@ -302,6 +306,95 @@ footer h1{
 }
 
 footer img{
-    width: 100%;
+  padding: 20px;
+  width: 100%;
 }
-*/ 
+footer a{
+  color: var(--color-darkteal);
+  padding-right: 10px;
+}
+footer i{
+  font-size: 40px;
+}
+
+footer input{
+  padding: 10px;
+}
+footer button{
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0px 40px 40px 0px;
+  background-color: var(--color-lightgreen);
+}
+
+.nieuwsbrief a{
+  color: var(--color-white);
+}
+
+.nieuwsbrief a:hover{
+  color: var(--color-black);
+}
+
+  /* ------------------------------------------------ CONTACT.HTML -------------------------------------------- */
+.back-button{
+  margin: 15px;
+  padding: 8px;
+  background-color: var(--color-darkteal);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-white);
+  font-size: 10pt;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+}
+
+.back-button :hover{
+  color: var(--color-black);
+}
+
+.form{
+  padding: 10px;
+}
+
+.form h1{
+  color: var(--color-lightgreen);
+  text-transform: uppercase;
+  font-size: 19pt;
+}
+
+.form input,
+textarea{
+  padding: 8px;
+  padding-right: 90px;
+  border: 3px solid var(--color-darkteal);
+  border-radius: 20px;
+}
+
+.form input p{
+  font-size: 17pt;
+  font-weight: 700;
+}
+
+.form textarea{
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.send-btn{
+  padding: 10px;
+  background-color: var(--color-darkteal);
+  color: white;
+  font-size: 15pt;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.send-btn a :hover{
+  color: var(--color-black);
+}
