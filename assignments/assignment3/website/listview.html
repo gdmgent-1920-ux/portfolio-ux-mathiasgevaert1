@@ -2,81 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>listview | [Gevaert Mathias] | [AVDa] | Opdracht 3</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/d2198999f0.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="./css/styles.css">
+     <script>
+          const toggleNavigationIcon = (x) => {
+               const navLinks = document.querySelector('.nav-links');
+               navLinks.classList.toggle('toggled');
+               x.classList.toggle('toggled');
+          }
+     </script>
+     <title>[Gevaert Mathias] | [AVDa] | Opdracht 3 | listview</title>
 </head>
 
 <body>
-    <!-- ----------- MAIN ------------- -->
 
-    <button>terug</button>
+     <!-- Header -->
 
-    <div id="container">
-        <ul>
-            <li>prijs</li>
-            <li>origine</li>
-            <li>water</li>
-        </ul>
+     <header>
+          <div class="container">
+               <div class="row justify-content-center align-items-center">
+                    <div class="col-4 col-md-4 logo">
+                         <img src="../img/logo.png" alt="logo">
+                    </div>
+               </div>
 
-    </div>
+          </div>
+          <!-- Navigation -->
 
+          <nav>
+               <div class="header container-fluid">
+                    <div class="container">
+                         <div class="row align-items-center">
+                              <div class="col-8 col-md-4 logo"></div>
+                              <div class="col-4 col-md-8">
+                                   <div class="row justify-content-end align-items-center">
+                                        <div class="nav-links">
+                                             <ul>
+                                                  <li>
+                                                       <a href="./index.html" title="Home">Home</a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="./index.html" title="i want this">verlanglijstje</a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="./index.html" title="my account">my account</a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="./contact.html" title="Contact">Contact</a>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                        <div class="nav-toggler" onclick="toggleNavigationIcon(this)">
+                                             <div class="bar1"></div>
+                                             <div class="bar2"></div>
+                                             <div class="bar3"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </nav>
+     </header>
 
-    <div class="alle-producten">
-        <div class="card">
-             <div class="img-card">
-                  <img src="" alt="">
-             </div>
-             <div class="card-info">
-                  <h2>Dracaena Marginata</h2>
-                  <li>Schakelt schadelijke stoffen uit. </li>
-                  <li>Pot is 24cm in diameter</li>
-                  <li>vrij weinig water nodig</li>
-                  <li>sterk luchtzuiverend</li>
-             </div>
-        </div>
+     <body>
+          <!-- ----------- MAIN ------------- -->
 
-        <div class="card">
-             <div class="img-card">
-                  <img src="" alt="">
-             </div>
-             <div class="card-info">
-                  <h2>Calathea orbifolia</h2>
-                  <li>gemiddeld water nodig</li>
-                  <li>sterk luchtzuiverend</li>
-                  <li>met pot 60 cm hoog</li>
-                  <li>shaduw of halfschaduw</li>
-             </div>
-        </div>
+          <div class="row">
+               <div class="col-3 back-button">
+                    <a href="listview.html"><i class="fas fa-angle-left"></i> terug</a>
+               </div>
+          </div>
 
-        <div class="card">
-             <div class="img-card">
-                  <img src="" alt="">
-             </div>
-             <div class="card-info">
-                  <h2>Spathiphyllum</h2>
-                  <li>vrij veel water</li>
-                  <li>sterk luchtzuiverend</li>
-                  <li>met pot 70cm hoog</li>
-                  <li>licht, geen direct zonlicht</li>
-             </div>
-        </div>
+          <div class="container">
 
-        <div class="card">
-             <div class="img-card">
-                  <img src="" alt="">
-             </div>
-             <div class="card-info">
-                  <h2>Kentia Howea</h2>
-                  <li>pot is 24cm in diameter</li>
-                  <li>gemiddeld water nodig</li>
-                  <li>met pot 115cm hoog</li>
-                  <li>sterk luchtzuiverend</li>
-             </div>
-        </div>
+          <div class="col-7 col-md-7 title">
+               <h1>onze producten</h1>
+          </div>
+               <div class="alle-producten">
+                    <div class="row justify-content-center">
+                         <a href="./detailpage.html">
+                              <div class="card">
+                                   <div class="img-card">
+                                        <img src="../img/Dracaena Marginata  4.png" alt="dracaena">
+                                   </div>
+                                   <div class="card-info">
+                                        <h2>Dracaena Marginata</h2>
+                                        <li>Schakelt schadelijke stoffen uit. </li>
+                                        <li>Pot is 24cm in diameter</li>
+                                        <li>vrij weinig water nodig</li>
+                                        <li>sterk luchtzuiverend</li>
+                                   </div>
+                              </div>
+                         </a>
+                         <a href="./detailpage.html">
+                              <div class="card">
+                                   <div class="img-card">
+                                        <img src="../img/calathea orbifolia 3.png" alt="calathea">
+                                   </div>
+                                   <div class="card-info">
+                                        <h2>Calathea orbifolia</h2>
+                                        <li>gemiddeld water nodig</li>
+                                        <li>sterk luchtzuiverend</li>
+                                        <li>met pot 60 cm hoog</li>
+                                        <li>shaduw of halfschaduw</li>
+                                   </div>
+                              </div>
+                         </a>
+                         <a href="./detailpage.html">
+                              <div class="card">
+                                   <div class="img-card">
+                                        <img src="../img/spathiphyllum.png" alt="spathiphyllum">
+                                   </div>
+                                   <div class="card-info">
+                                        <h2>Spathiphyllum</h2>
+                                        <li>vrij veel water</li>
+                                        <li>sterk luchtzuiverend</li>
+                                        <li>met pot 70cm hoog</li>
+                                        <li>licht, geen direct zonlicht</li>
+                                   </div>
+                              </div>
+                         </a>
+                         <a href="./detailpage.html">
+                              <div class="card">
+                                   <div class="img-card">
+                                        <img src="../img/kentia howea.png" alt="kentia">
+                                   </div>
+                                   <div class="card-info">
+                                        <h2>Kentia Howea</h2>
+                                        <li>pot is 24cm in diameter</li>
+                                        <li>gemiddeld water nodig</li>
+                                        <li>met pot 115cm hoog</li>
+                                        <li>sterk luchtzuiverend</li>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+               </div>
+               <div class="row justify-content-center">
+                    <div class="button-give">
+                         <a href="./listview.html" class="give-me">give me more</a>
+                    </div>
+               </div>
+          </div>
 
-        <button>give me more</button>
-   </div>
-</body>
+          <!-- -------- FOOTER ----------- -->
+          <footer>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-6 socials">
+                              <h1>volg ons!</h1>
+                              <a href="https://www.instagram.com/?hl=nl" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fab fa-facebook-square"></i></a>
+                              <a href="https://www.apple.com/benl/ios/app-store/" target="_blank"><i
+                                        class="fab fa-app-store-ios"></i></a>
+                         </div>
+                         <div class="col-6 justify-content-end footer-img">
+                              <img src="../img/logo.png" alt="">
+                         </div>
+                         <div class="row">
+                              <div class="col nieuwsbrief">
+                                   <p>schrijf u in voor onze nieuwsbrief!</p>
+                                   <form action="inschrijven">
+                                        <input type="text" placeholder="vul hier uw e-mailadres in!">
+                                        <button><a href="https://i.pinimg.com/originals/87/d0/a6/87d0a6fbd0c61ae5d64e9bdf76ad825d.gif"
+                                                  target="_blank">enter</a></button>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+
+     </body>
 
 </html>
