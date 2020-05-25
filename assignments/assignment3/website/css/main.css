@@ -240,8 +240,9 @@ main .all-products {
   text-decoration: none;
   border: none;
   border-radius: 50px;
-  padding: 5px 30px 5px 30px;
+  /* padding: 5px 30px 5px 30px; */
   text-align: center;
+  padding: 10px;
 }
 
 main .all-products:hover {
@@ -264,8 +265,8 @@ main .all-products:hover {
 .card-info {
   background-color: var(--color-lightgreen);
   border-radius: 0px 50px 0px 0px;
-  padding: 0px;
-  margin: 0;
+  padding: 10px;
+  margin: 20px;
 }
 
 
@@ -381,7 +382,6 @@ textarea {
   color: var(--color-black);
 }
 
-
 /* --------------- LISTVIEW --------------- */
 
 .alle-producten img {
@@ -444,12 +444,14 @@ h1 {
 }
 
 .beschrijving {
+  font-size: 15pt;
   margin: 5px;
   list-style-type: circle;
 }
 
 .beschrijving ul {
   margin: 30px;
+  line-height: 20pt;
 }
 
 .leafs {
@@ -458,6 +460,7 @@ h1 {
 }
 
 .review {
+  font-size: 15pt;
   padding: 5px;
 }
 
